@@ -1,0 +1,300 @@
+.homepage {
+  min-height: 100vh;
+  background-color: #f5f0e8;
+  background-image: 
+    radial-gradient(circle, rgba(210, 180, 140, 0.15) 2px, transparent 2px);
+  background-size: 60px 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header Styles */
+.header {
+  background-color: #ffb380;
+  padding: 1rem 2rem;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.paw-icon {
+  font-size: 1.5rem;
+  color: #d2691e;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: 'Arial', sans-serif;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #d2691e;
+}
+
+/* Main Content */
+.main-content {
+  position: relative;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 100px);
+}
+
+/* Wavy Decorative Lines */
+.wavy-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wavy-line-left {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.wavy-line-bottom {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  opacity: 0.6;
+}
+
+.wavy-line-top-right {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 400px;
+  height: 200px;
+  opacity: 0.5;
+}
+
+/* Content Wrapper */
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+/* Left Content */
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-title {
+  margin: 0;
+  line-height: 1;
+  font-family: 'Arial', sans-serif;
+}
+
+.title-line {
+  display: block;
+  font-size: 5.5rem;
+  font-weight: 900;
+  color: #ff7f50;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: -2px;
+}
+
+.title-line:first-child {
+  margin-bottom: -0.2em;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  font-weight: 500;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+.website-url {
+  font-size: 1rem;
+  color: #2c2c2c;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Right Content - Polaroid Photos */
+.right-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.polaroid-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.polaroid {
+  position: absolute;
+  background: white;
+  padding: 15px 15px 50px 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.polaroid-back {
+  background-color: #ffb380;
+  padding: 18px 18px 55px 18px;
+  transform: rotate(-8deg) translateX(-20px) translateY(20px);
+  z-index: 1;
+}
+
+.polaroid-front {
+  background-color: #ff7f50;
+  padding: 15px 15px 50px 15px;
+  transform: rotate(5deg) translateX(20px) translateY(-10px);
+  z-index: 2;
+}
+
+.polaroid-frame {
+  background: white;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.polaroid-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #ffe4b5 0%, #ffdab9 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f0f0f0;
+}
+
+.pet-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pet-emoji {
+  font-size: 4rem;
+}
+
+.pet-label {
+  font-size: 1rem;
+  color: #666;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  font-weight: 500;
+}
+
+.corgi-image {
+  background: linear-gradient(135deg, #deb887 0%, #f4a460 100%);
+}
+
+.cat-image {
+  background: linear-gradient(135deg, #ffa07a 0%, #ff8c69 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .right-content {
+    min-height: 300px;
+  }
+
+  .title-line {
+    font-size: 4rem;
+  }
+
+  .tagline {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .navigation {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .main-content {
+    padding: 2rem 1rem;
+  }
+
+  .title-line {
+    font-size: 3rem;
+  }
+
+  .polaroid-back {
+    transform: rotate(-5deg) translateX(-10px) translateY(10px);
+  }
+
+  .polaroid-front {
+    transform: rotate(3deg) translateX(10px) translateY(-5px);
+  }
+}
+
