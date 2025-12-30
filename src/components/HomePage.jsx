@@ -1,4 +1,5 @@
 import './HomePage.css';
+import rooffurLogo from '../assets/rooffur3.svg';
 
 function HomePage() {
   return (
@@ -7,8 +8,8 @@ function HomePage() {
       <header className="header">
         <div className="header-content">
           <div className="logo-section">
-            <span className="paw-icon">🐾</span>
-            <span className="logo-text">Pet Shop</span>
+            <img src={rooffurLogo} alt="ROOFFUR Logo" className="rooffur-logo" />
+            <span className="brand-name">ROOFFUR</span>
           </div>
           <nav className="navigation">
             <a href="#home" className="nav-link">HOME</a>
